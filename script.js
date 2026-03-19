@@ -1,90 +1,73 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: white;
+const musicData = [
+  {
+    title: "Emotional Track",
+    artist: "You",
+    genre: "Ambient",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  }
+];
+
+const pluginData = [
+  {
+    name: "FreqTone",
+    type: "Synth",
+    desc: "Powerful VST plugin",
+    demo: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    download: "https://example.com/plugin.zip"
+  }
+];
+
+const musicGrid = document.getElementById("musicGrid");
+const pluginGrid = document.getElementById("pluginGrid");
+
+function renderMusic(data) {
+  musicGrid.innerHTML = "";
+  data.forEach(item => {
+    musicGrid.innerHTML += `
+      <div class="card">
+        <h3>${item.title}</h3>
+        <p>${item.artist} • ${item.genre}</p>
+        <button class="preview" onclick="openPreview('${item.audio}')">Preview</button>
+        <a href="${item.audio}" download><button class="download">Download</button></a>
+      </div>
+    `;
+  });
 }
 
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background: rgba(0,0,0,0.7);
-  position: sticky;
-  top: 0;
+function renderPlugins(data) {
+  pluginGrid.innerHTML = "";
+  data.forEach(item => {
+    pluginGrid.innerHTML += `
+      <div class="card">
+        <h3>${item.name}</h3>
+        <p>${item.type}</p>
+        <button class="preview" onclick="openPreview('${item.demo}')">Preview</button>
+        <a href="${item.download}"><button class="download">Download</button></a>
+      </div>
+    `;
+  });
 }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #111);
+function openPreview(src) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("modalBody").innerHTML =
+    `<audio controls autoplay src="${src}" style="width:100%"></audio>`;
 }
 
-.hero-buttons a {
-  margin: 10px;
-  padding: 10px 20px;
-  background: #6c5cff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-}
+document.getElementById("closeModal").onclick = () => {
+  document.getElementById("modal").style.display = "none";
+};
 
-/* SECTION */
-.section {
-  padding: 50px 20px;
-}
+renderMusic(musicData);
+renderPlugins(pluginData);
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-}
+/* SEARCH */
+document.getElementById("musicSearch").addEventListener("input", e => {
+  const value = e.target.value.toLowerCase();
+  renderMusic(musicData.filter(m => m.title.toLowerCase().includes(value)));
+});
 
-/* CARD */
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #6c5cff;
-}
-
-button {
-  padding: 8px 12px;
-  border: none;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.preview {
-  background: #444;
-}
-
-.download {
-  background: #6c5cff;
-  color: white;
-}
-
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  top:0; left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.8);
-}
-
-.modal-content {
-  background: #111;
-  margin: 10% auto;
-  padding: 20px;
-  width: 80%;
-}
+document.getElementById("pluginSearch").addEventListener("input", e => {
+  const value = e.target.value.toLowerCase();
+  renderPlugins(pluginData.filter(p => p.name.toLowerCase().includes(value)));
+});

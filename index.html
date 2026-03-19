@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h1>AudioHub</h1>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#music">Music</a>
+    <a href="#plugins">Plugins</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h2>Music & VST Plugin Hub</h2>
+  <p>Preview and download high-quality music and audio tools</p>
+  <div class="hero-buttons">
+    <a href="#music">Explore Music</a>
+    <a href="#plugins">Explore Plugins</a>
+  </div>
+</section>
+
+<!-- MUSIC SECTION -->
+<section id="music" class="section">
+  <h2>🎧 Music</h2>
+  <input type="text" id="musicSearch" placeholder="Search music...">
+
+  <div class="grid" id="musicGrid"></div>
+</section>
+
+<!-- PLUGIN SECTION -->
+<section id="plugins" class="section">
+  <h2>🔌 VST Plugins</h2>
+  <input type="text" id="pluginSearch" placeholder="Search plugins...">
+
+  <div class="grid" id="pluginGrid"></div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,58 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Audio Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AudioHub — Music & VST Plugins</title>
+  <meta name="description" content="A premium music and plugin hub for previewing and downloading audio content." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <h1>AudioHub</h1>
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#music">Music</a>
-    <a href="#plugins">Plugins</a>
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <a class="brand" href="#home">
+        <span class="brand-mark">A</span>
+        <span class="brand-text">AudioHub</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#plugins">Plugins</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">
+        ☾
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Premium audio showcase</div>
+        <h1>Preview, explore, and download your music and VST plugins in one elegant hub.</h1>
+        <p>
+          Built for musicians, producers, and audio enthusiasts who want a polished place to browse releases,
+          hear previews, and access plugin downloads instantly.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#music">Explore Music</a>
+          <a class="btn btn-secondary" href="#plugins">Explore Plugins</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong id="musicCount">0</strong>
+            <span>Music items</span>
+          </div>
+          <div class="stat-card">
+            <strong id="pluginCount">0</strong>
+            <span>Plugins</span>
+          </div>
+          <div class="stat-card">
+            <strong>HD</strong>
+            <span>Previews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-panel">
+          <div class="visual-top">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="waveform">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="spotlight-card">
+            <p>Featured release</p>
+            <h3>Midnight Bloom</h3>
+            <span>Emotional • Cinematic • 128 BPM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-strip">
+      <div class="featured-label">Trending now</div>
+      <div class="featured-track">
+        <div class="featured-item">Cinematic</div>
+        <div class="featured-item">Ambient</div>
+        <div class="featured-item">Synthwave</div>
+        <div class="featured-item">VST3</div>
+        <div class="featured-item">AAX</div>
+        <div class="featured-item">Free Downloads</div>
+      </div>
+    </section>
+
+    <section id="music" class="content-section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Music block</div>
+          <h2>Music</h2>
+          <p>Browse tracks with fast preview, smart filtering, and direct download actions.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input id="musicSearch" class="search-input" type="search" placeholder="Search tracks..." />
+        <select id="musicGenreFilter" class="select-input">
+          <option value="all">All genres</option>
+          <option value="Ambient">Ambient</option>
+          <option value="Cinematic">Cinematic</option>
+          <option value="House">House</option>
+          <option value="Trap">Trap</option>
+          <option value="Lo-fi">Lo-fi</option>
+          <option value="Emotional">Emotional</option>
+        </select>
+        <select id="musicSort" class="select-input">
+          <option value="featured">Featured</option>
+          <option value="latest">Latest</option>
+          <option value="popular">Most popular</option>
+          <option value="duration">Shortest</option>
+        </select>
+      </div>
+
+      <div id="musicGrid" class="card-grid"></div>
+    </section>
+
+    <section id="plugins" class="content-section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">VST plugin block</div>
+          <h2>VST Plugins</h2>
+          <p>Showcase your instruments and effects with polished previews and one-click downloads.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input id="pluginSearch" class="search-input" type="search" placeholder="Search plugins..." />
+        <select id="pluginTypeFilter" class="select-input">
+          <option value="all">All types</option>
+          <option value="Synth">Synth</option>
+          <option value="Effect">Effect</option>
+          <option value="Instrument">Instrument</option>
+          <option value="Utility">Utility</option>
+        </select>
+        <select id="pluginSort" class="select-input">
+          <option value="featured">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="popular">Most downloaded</option>
+        </select>
+      </div>
+
+      <div id="pluginGrid" class="card-grid"></div>
+    </section>
+
+    <section id="about" class="info-section">
+      <div class="info-card">
+        <div class="eyebrow">About</div>
+        <h3>Built to feel premium, fast, and easy to navigate.</h3>
+        <p>
+          This layout is designed to scale as your catalog grows, while keeping music and plugins clearly separated.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="info-section">
+      <div class="info-card">
+        <div class="eyebrow">Contact</div>
+        <h3>Social links and contact details can go here.</h3>
+        <p>Add your email, Instagram, YouTube, SoundCloud, or store links in this section.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="modal-close" type="button" aria-label="Close preview">×</button>
+      <div id="modalBody"></div>
+    </div>
   </div>
-</nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <h2>Music & VST Plugin Hub</h2>
-  <p>Preview and download high-quality music and audio tools</p>
-  <div class="hero-buttons">
-    <a href="#music">Explore Music</a>
-    <a href="#plugins">Explore Plugins</a>
-  </div>
-</section>
+  <template id="cardTemplate">
+    <article class="media-card">
+      <div class="card-media"></div>
+      <div class="card-body">
+        <div class="card-topline">
+          <span class="pill"></span>
+          <span class="meta"></span>
+        </div>
+        <h3 class="card-title"></h3>
+        <p class="card-desc"></p>
+        <div class="tag-row"></div>
+        <div class="card-footer">
+          <span class="duration"></span>
+          <div class="card-actions">
+            <button class="btn btn-ghost preview-btn" type="button">Preview</button>
+            <a class="btn btn-primary download-btn" href="#" download>Download</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </template>
 
-<!-- MUSIC SECTION -->
-<section id="music" class="section">
-  <h2>🎧 Music</h2>
-  <input type="text" id="musicSearch" placeholder="Search music...">
-
-  <div class="grid" id="musicGrid"></div>
-</section>
-
-<!-- PLUGIN SECTION -->
-<section id="plugins" class="section">
-  <h2>🔌 VST Plugins</h2>
-  <input type="text" id="pluginSearch" placeholder="Search plugins...">
-
-  <div class="grid" id="pluginGrid"></div>
-</section>
-
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal">&times;</span>
-    <div id="modalBody"></div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

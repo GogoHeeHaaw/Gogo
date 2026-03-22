@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AudioHub — Music & VST Plugins</title>
+  <title>DigitalHarmony — Music & VST Plugins</title>
   <meta name="description" content="A premium music and plugin hub for previewing and downloading audio content." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,12 +39,8 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">Premium audio showcase</div>
-        <h1>Preview, explore, and download your music and VST plugins in one elegant hub.</h1>
-        <p>
-          Built for musicians, producers, and audio enthusiasts who want a polished place to browse releases,
-          hear previews, and access plugin downloads instantly.
-        </p>
+      </div>
+        <h1>Preview, explore, and download our music and VST plugins for free of cost.</h1>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#music">Explore Music</a>
@@ -86,45 +82,72 @@
       </div>
     </section>
 
-    <section class="featured-strip">
-      <div class="featured-label">Trending now</div>
-      <div class="featured-track">
-        <div class="featured-item">Cinematic</div>
-        <div class="featured-item">Ambient</div>
-        <div class="featured-item">Synthwave</div>
-        <div class="featured-item">VST3</div>
-        <div class="featured-item">AAX</div>
-        <div class="featured-item">Free Downloads</div>
-      </div>
-    </section>
-
     <section id="music" class="content-section">
       <div class="section-head">
         <div>
           <div class="eyebrow">Music block</div>
           <h2>Music</h2>
-          <p>Browse tracks with fast preview, smart filtering, and direct download actions.</p>
+          <p>Browse our track/songs with fast preview, smart filtering, and direct download actions.</p>
         </div>
       </div>
 
       <div class="toolbar">
-        <input id="musicSearch" class="search-input" type="search" placeholder="Search tracks..." />
-        <select id="musicGenreFilter" class="select-input">
-          <option value="all">All genres</option>
-          <option value="Ambient">Ambient</option>
-          <option value="Cinematic">Cinematic</option>
-          <option value="House">House</option>
-          <option value="Trap">Trap</option>
-          <option value="Lo-fi">Lo-fi</option>
-          <option value="Emotional">Emotional</option>
-        </select>
-        <select id="musicSort" class="select-input">
-          <option value="featured">Featured</option>
-          <option value="latest">Latest</option>
-          <option value="popular">Most popular</option>
-          <option value="duration">Shortest</option>
-        </select>
-      </div>
+  <input 
+    id="musicSearch" 
+    class="search-input" 
+    type="search" 
+    placeholder="Search tracks..." 
+  />
+
+  <select id="musicGenreFilter" class="select-input">
+    <option value="all">All genres</option>
+    <option value="Ambient">Ambient</option>
+    <option value="Cinematic">Cinematic</option>
+    <option value="House">House</option>
+    <option value="Trap">Trap</option>
+    <option value="Lo-fi">Lo-fi</option>
+    <option value="Emotional">Emotional</option>
+  </select>
+
+  <select id="musicSort" class="select-input">
+    <option value="featured">Featured</option>
+    <option value="latest">Latest</option>
+    <option value="popular">Most popular</option>
+    <option value="duration">Shortest</option>
+  </select>
+</div>
+
+<style>
+  .toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #121212; /* dark background */
+  }
+
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+
+  .search-input::placeholder {
+    color: #aaa;
+  }
+
+  .select-input {
+    padding: 8px 12px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #fff;              /* FIX: visible text */
+  }
+
+  .select-input option {
+    background-color: #1e1e1e;
+    color: #fff;              /* FIX: dropdown items visible */
+  }
+</style>
 
       <div id="musicGrid" class="card-grid"></div>
     </section>
@@ -134,7 +157,7 @@
         <div>
           <div class="eyebrow">VST plugin block</div>
           <h2>VST Plugins</h2>
-          <p>Showcase your instruments and effects with polished previews and one-click downloads.</p>
+          <p>Review our VST3 plugin with one-click downloads.</p>
         </div>
       </div>
 
@@ -142,10 +165,7 @@
         <input id="pluginSearch" class="search-input" type="search" placeholder="Search plugins..." />
         <select id="pluginTypeFilter" class="select-input">
           <option value="all">All types</option>
-          <option value="Synth">Synth</option>
           <option value="Effect">Effect</option>
-          <option value="Instrument">Instrument</option>
-          <option value="Utility">Utility</option>
         </select>
         <select id="pluginSort" class="select-input">
           <option value="featured">Featured</option>

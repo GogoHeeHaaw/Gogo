@@ -18,8 +18,8 @@
   <header class="nav-wrap">
     <nav class="navbar">
       <a class="brand" href="#home">
-        <span class="brand-mark">A</span>
-        <span class="brand-text">AudioHub</span>
+        <span class="brand-mark">D</span>
+        <span class="brand-text">DigitalHarmony</span>
       </a>
 
       <div class="nav-links">
@@ -39,8 +39,12 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-copy">
-      </div>
+       <div class="eyebrow">DigitalHarmony Showcase</div>
         <h1>Preview, explore, and download our music and VST plugins for free of cost.</h1>
+        <p>
+          Built for musicians, producers, and audio enthusiasts who want a polished place to browse our releases,
+          hear previews, and access plugin downloads instantly.
+        </p>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#music">Explore Music</a>
@@ -73,11 +77,10 @@
           <div class="waveform">
             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
-          <div class="spotlight-card">
-            <p>Featured release</p>
-            <h3>Midnight Bloom</h3>
-            <span>Emotional • Cinematic • 128 BPM</span>
-          </div>
+          <a href="https://www.youtube.com/@DigitalHarmony469" target="_blank" class="spotlight-card">
+  <p>Featured release</p>
+  <h3>Visit our YouTube channel</h3>
+</a>
         </div>
       </div>
     </section>
@@ -90,65 +93,26 @@
           <p>Browse our track/songs with fast preview, smart filtering, and direct download actions.</p>
         </div>
       </div>
-
+      
       <div class="toolbar">
-  <input 
-    id="musicSearch" 
-    class="search-input" 
-    type="search" 
-    placeholder="Search tracks..." 
-  />
-
-  <select id="musicGenreFilter" class="select-input">
-    <option value="all">All genres</option>
-    <option value="Ambient">Ambient</option>
-    <option value="Cinematic">Cinematic</option>
-    <option value="House">House</option>
-    <option value="Trap">Trap</option>
-    <option value="Lo-fi">Lo-fi</option>
-    <option value="Emotional">Emotional</option>
-  </select>
-
-  <select id="musicSort" class="select-input">
-    <option value="featured">Featured</option>
-    <option value="latest">Latest</option>
-    <option value="popular">Most popular</option>
-    <option value="duration">Shortest</option>
-  </select>
-</div>
-
-<style>
-  .toolbar {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: #121212; /* dark background */
-  }
-
-  .search-input {
-    padding: 8px 12px;
-    border: 1px solid #444;
-    background-color: #1e1e1e;
-    color: #fff;
-  }
-
-  .search-input::placeholder {
-    color: #aaa;
-  }
-
-  .select-input {
-    padding: 8px 12px;
-    border: 1px solid #444;
-    background-color: #1e1e1e;
-    color: #fff;              /* FIX: visible text */
-  }
-
-  .select-input option {
-    background-color: #1e1e1e;
-    color: #fff;              /* FIX: dropdown items visible */
-  }
-</style>
-
+        <input id="musicSearch" class="search-input" type="search" placeholder="Search tracks..." />
+        <select id="musicGenreFilter" class="select-input">
+          <option value="all">All genres</option>
+          <option value="Ambient">Ambient</option>
+          <option value="Cinematic">Cinematic</option>
+          <option value="House">House</option>
+          <option value="Trap">Trap</option>
+          <option value="Lo-fi">Lo-fi</option>
+          <option value="Emotional">Emotional</option>
+        </select>
+        <select id="musicSort" class="select-input">
+          <option value="featured">Featured</option>
+          <option value="latest">Latest</option>
+          <option value="popular">Most popular</option>
+          <option value="duration">Shortest</option>
+        </select>
+      </div>
+      
       <div id="musicGrid" class="card-grid"></div>
     </section>
 
@@ -178,23 +142,28 @@
     </section>
 
     <section id="about" class="info-section">
-      <div class="info-card">
-        <div class="eyebrow">About</div>
-        <h3>Built to feel premium, fast, and easy to navigate.</h3>
-        <p>
-          This layout is designed to scale as your catalog grows, while keeping music and plugins clearly separated.
-        </p>
-      </div>
-    </section>
+  <div class="info-card">
+    <div class="eyebrow">About</div>
+    <h3>Blending emotion, technology, and sound into one experience.</h3>
+    <p>
+      DigitalHarmony is an independent audio project exploring the space between modern music production and audio innovation. Created and operated by a solo developer, it delivers emotionally driven music alongside custom-built VST plugins for artists and producers.
+    </p>
+    <p>
+      Every release—whether a track or a tool—is designed to be immersive, impactful, and meaningful beyond just listening. As it evolves, DigitalHarmony aims to grow into a complete creative platform for music, sound design, and audio development.
+    </p>
+  </div>
+</section>
 
     <section id="contact" class="info-section">
-      <div class="info-card">
-        <div class="eyebrow">Contact</div>
-        <h3>Social links and contact details can go here.</h3>
-        <p>Add your email, Instagram, YouTube, SoundCloud, or store links in this section.</p>
-      </div>
-    </section>
-  </main>
+  <div class="info-card">
+    <div class="eyebrow">Contact</div>
+    <h3>Connect with DigitalHarmony</h3>
+    
+    <p><a href="digitalharmony145@gmail.com">Email</a></p>
+    <p><a href="https://linktr.ee/DigitalHarmony469" target="_blank">YouTube</a></p>
+
+  </div>
+</section>
 
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">

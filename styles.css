@@ -268,30 +268,51 @@ main{
 .yellow{ background:#ffd86b; }
 .green{ background:#4ee59a; }
 
-.waveform{
-  position:relative;
-  z-index:1;
+.logo-container{
+  position: relative;
+  z-index: 1;
   display:flex;
-  align-items:end;
-  gap:10px;
+  justify-content:center;
+  align-items:center;
   height:220px;
   padding:20px 0 34px;
 }
-.waveform span{
+
+.logo{
   width:100%;
-  border-radius:999px;
-  background:linear-gradient(180deg, rgba(93,231,255,.8), rgba(139,123,255,.95));
-  animation: pulse 1.8s ease-in-out infinite;
-  box-shadow:0 0 24px rgba(93,231,255,0.15);
+  max-width:320px;
+  border-radius:20px;
+
+  /* 🔁 constant animation */
+  animation: logoFloat 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+
+  transition: transform .3s ease, filter .3s ease;
 }
-.waveform span:nth-child(1){ height:34%; animation-delay:-.1s; }
-.waveform span:nth-child(2){ height:68%; animation-delay:-.3s; }
-.waveform span:nth-child(3){ height:46%; animation-delay:-.2s; }
-.waveform span:nth-child(4){ height:88%; animation-delay:-.5s; }
-.waveform span:nth-child(5){ height:54%; animation-delay:-.4s; }
-.waveform span:nth-child(6){ height:76%; animation-delay:-.6s; }
-.waveform span:nth-child(7){ height:40%; animation-delay:-.2s; }
-.waveform span:nth-child(8){ height:62%; animation-delay:-.1s; }
+
+/* 🌊 floating motion */
+@keyframes logoFloat{
+  0%,100%{ transform:translateY(0px); }
+  50%{ transform:translateY(-10px); }
+}
+
+/* ✨ glow breathing */
+@keyframes glowPulse{
+  0%{
+    filter: drop-shadow(0 0 10px #5de7ff);
+  }
+  50%{
+    filter: drop-shadow(0 0 25px #8b7bff);
+  }
+  100%{
+    filter: drop-shadow(0 0 10px #5de7ff);
+  }
+}
+
+/* 🖱️ hover effect */
+.logo:hover{
+  transform: scale(1.08) translateY(-5px);
+  filter: drop-shadow(0 0 35px #ff00ff);
+}
 
 .spotlight-card{
   position:relative;

@@ -448,16 +448,29 @@ main{
   gap:12px;
   margin-bottom:20px;
 }
-.search-input, .select-input{
+.select-input{
   width:100%;
   min-height:52px;
   padding:0 16px;
   border-radius:16px;
   border:1px solid var(--line);
-  background:var(--panel);
-  color:var(--text);
+
+  background: var(--panel);
+  color: var(--text);
+
   outline:none;
+
+  /* 🔥 clean UI */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
+.select-input option{
+  background: var(--bg-2);
+  color: var(--text);
+}
+
 .search-input::placeholder{ color:var(--muted-2); }
 .search-input:focus, .select-input:focus{
   border-color:rgba(139,123,255,0.6);

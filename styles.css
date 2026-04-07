@@ -268,7 +268,7 @@ main{
 .yellow{ background:#ffd86b; }
 .green{ background:#4ee59a; }
 
-.logo-container{
+.yt-visual{
   position: relative;
   z-index: 1;
   display:flex;
@@ -278,36 +278,94 @@ main{
   padding:20px 0 34px;
 }
 
-.logo{
+/* MAIN CARD */
+.yt-card{
+  position: relative;
   width:100%;
   max-width:320px;
+  padding:20px;
   border-radius:20px;
+  text-decoration:none;
+  overflow:hidden;
 
-  /* 🔁 constant animation */
-  animation: logoFloat 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
 
-  transition: transform .3s ease, filter .3s ease;
+  backdrop-filter: blur(14px);
+
+  transition: all .35s ease;
 }
 
-/* 🌊 floating motion */
-@keyframes logoFloat{
-  0%,100%{ transform:translateY(0px); }
-  50%{ transform:translateY(-10px); }
+/* 🔁 animated glow layer */
+.yt-glow{
+  position:absolute;
+  inset:-40%;
+  background: radial-gradient(circle, rgba(255,0,80,0.35), transparent 60%);
+  animation: ytPulse 4s ease-in-out infinite;
 }
 
-/* ✨ glow breathing */
-@keyframes glowPulse{
-  0%{
-    filter: drop-shadow(0 0 10px #5de7ff);
-  }
-  50%{
-    filter: drop-shadow(0 0 25px #8b7bff);
-  }
-  100%{
-    filter: drop-shadow(0 0 10px #5de7ff);
-  }
+/* content */
+.yt-content{
+  position: relative;
+  z-index: 2;
+  display:flex;
+  align-items:center;
+  gap:14px;
 }
 
+/* icon */
+.yt-icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background: linear-gradient(135deg, #ff0033, #ff4d6d);
+  color:white;
+  font-size:18px;
+
+  box-shadow: 0 10px 30px rgba(255,0,80,0.4);
+}
+
+/* text */
+.yt-title{
+  display:block;
+  font-weight:600;
+}
+.yt-sub{
+  display:block;
+  font-size:.85rem;
+  color:var(--muted-2);
+}
+
+/* ✨ hover magic */
+.yt-card:hover{
+  transform: translateY(-6px) scale(1.03);
+  border-color: rgba(255,0,80,0.5);
+  box-shadow: 0 20px 60px rgba(255,0,80,0.25);
+}
+
+.yt-card:hover .yt-icon{
+  transform: scale(1.1);
+}
+
+.yt-card:hover .yt-glow{
+  animation: ytPulseFast 1.5s ease-in-out infinite;
+}
+
+/* animations */
+@keyframes ytPulse{
+  0%,100%{ opacity:.4; transform: scale(1); }
+  50%{ opacity:.8; transform: scale(1.2); }
+}
+
+@keyframes ytPulseFast{
+  0%,100%{ opacity:.6; transform: scale(1); }
+  50%{ opacity:1; transform: scale(1.4); }
+}
+  
 /* 🖱️ hover effect */
 .logo:hover{
   transform: scale(1.08) translateY(-5px);

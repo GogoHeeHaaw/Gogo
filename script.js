@@ -79,7 +79,7 @@ const pluginData = [
     featured: false,
     description: "A versatile and intuitive delay plugin, a sleek minimal design with an optimized engine which can deliver from tight slap-back to wide cinematic echoes.",
     tags: ["Effect", "Space", "Ambient", "Echoes"],
-    image: "https://www.dropbox.com/scl/fi/g26gzbe8t8oamte2gwfh1/file_000000001ee8720683dd6daf2c7fe445.png?rlkey=o5884jd955h6k52plrcvjv5sv&st=1pok4pcg&dl=0",
+    image: "file_000000001ee8720683dd6daf2c7fe445.png",
     previewType: "video",
     previewSrc: "https://www.dropbox.com/scl/fi/lpbkzb4pai5psfrkvq8tg/VN20260319_181704.mp4?rlkey=qxtw7z37a66oep8w23z931t7z&st=h2pfelg8&dl=0",
     download: "https://www.dropbox.com/scl/fi/76qk48362rkw9zscvsjmq/ZoDelay.rar?rlkey=40tgp7flztfmw4weuwtgc9iqk&st=pn4w8djd&dl=0"

@@ -6,14 +6,14 @@ const musicData = [
     genre: "Tropical House",
     mood: "Chill, Moody, Dreamy",
     bpm: 140,
-    duration: "2:58",
+    duration: "3:31",
     featured: false,
     popular: 92,
     description: "A sleek chill and dreamy with modern synth/bass energy and ambient movement.",
     tags: ["Tropical House", "Dreamy"],
-    cover: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
-    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    cover: "https://www.dropbox.com/scl/fi/vtahnyfrzrs4i3gmvm3o3/IMG_20260408_170230.jpg?rlkey=vvostk7lhhbaeiqfx4ju6f34e&st=6z8oixnm&dl=0",
+    audio: "https://www.dropbox.com/scl/fi/ug2ctthit7fwdmgzqkhip/Gogo-OMA.m4a?rlkey=k739fz7rlxef9pqdofqc9iqru&st=lujju5a1&dl=0",
+    download: "https://www.dropbox.com/scl/fi/ug2ctthit7fwdmgzqkhip/Gogo-OMA.m4a?rlkey=k739fz7rlxef9pqdofqc9iqru&st=lujju5a1&dl=0"
   },
   {
     id: 2,
@@ -22,14 +22,14 @@ const musicData = [
     genre: "Melodic Bass",
     mood: "Emotional",
     bpm: 140,
-    duration: "3:42",
+    duration: "4:20",
     featured: true,
     popular: 75,
     description: "A wide, emotional melodic bass track with thick atmospheric layers and a powerful lift.",
     tags: ["Melodic", "Emotional", "Atmospheric"],
-    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
-    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    cover: "https://www.dropbox.com/scl/fi/8znkjum2g39kzg1ortbuw/IMG_20260408_173419.jpg?rlkey=f9k84jhpnw0t5p2auczinb4m8&st=m7g4tnly&dl=0",
+    audio: "https://www.dropbox.com/scl/fi/mo8ats86bbhpdx29utplg/Gogo-MAKA.m4a?rlkey=a6p3w4avdmnf8p37ietjehbr0&st=dzy5nve2&dl=0",
+    download: "https://www.dropbox.com/scl/fi/mo8ats86bbhpdx29utplg/Gogo-MAKA.m4a?rlkey=a6p3w4avdmnf8p37ietjehbr0&st=dzy5nve2&dl=0"
   },
   {
     id: 3,
@@ -38,14 +38,14 @@ const musicData = [
     genre: "Electronic Rock",
     mood: "Emotional rock vibe with electronic texture",
     bpm: 148,
-    duration: "4:15",
+    duration: "3:54",
     featured: false,
     popular: 68,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
-    cover: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
-    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-    download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    cover: "#",
+    audio: "#",
+    upcoming: "#"
   }
 ];
 
@@ -62,9 +62,9 @@ const pluginData = [
     featured: true,
     description: "A distortion plugin designed for adding crunch, saturation, overdrive and cutting low/high pass to your samples.",
     tags: ["Effect", "Distortion", "Minimal"],
-    image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
-    previewType: "audio",
-    previewSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    image: "https://www.dropbox.com/scl/fi/gjcnhfhz0lnyixf1598f4/20260408_060337.jpg?rlkey=h6sles54fp08z48gt9dpgijy6&st=n1cin3a9&dl=0",
+    previewType: "video",
+    previewSrc: "https://www.instagram.com/reel/DLpij7Lzm50/?igsh=MXMwdTc4dGZ2cTl6cQ==",
     download: "https://www.dropbox.com/scl/fi/ttldgl1xnck1suj19q6w5/FreqTone.rar?rlkey=xkurbfq8m7mfq3tvew6jqg9qo&st=qeiem7ax&dl=0"
   },
   {
@@ -77,11 +77,11 @@ const pluginData = [
     newest: true,
     popular: 95,
     featured: false,
-    description: "A versatile and intuitive parameters delay plugin, a sleek minimal design with an optimized engine which can output from tight slap-back to wide cinematic echoes.",
+    description: "A versatile and intuitive delay plugin, a sleek minimal design with an optimized engine which can deliver from tight slap-back to wide cinematic echoes.",
     tags: ["Effect", "Space", "Ambient", "Echoes"],
-    image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
+    image: "https://www.dropbox.com/scl/fi/g26gzbe8t8oamte2gwfh1/file_000000001ee8720683dd6daf2c7fe445.png?rlkey=o5884jd955h6k52plrcvjv5sv&st=1pok4pcg&dl=0",
     previewType: "video",
-    previewSrc: "https://www.w3schools.com/html/mov_bbb.mp4",
+    previewSrc: "https://www.dropbox.com/scl/fi/lpbkzb4pai5psfrkvq8tg/VN20260319_181704.mp4?rlkey=qxtw7z37a66oep8w23z931t7z&st=h2pfelg8&dl=0",
     download: "https://www.dropbox.com/scl/fi/76qk48362rkw9zscvsjmq/ZoDelay.rar?rlkey=40tgp7flztfmw4weuwtgc9iqk&st=pn4w8djd&dl=0"
   }
 ];

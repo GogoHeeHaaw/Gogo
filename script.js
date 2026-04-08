@@ -26,7 +26,7 @@ const musicData = [
     featured: false,
     popular: 92,
     description: "A sleek chill and dreamy with modern synth/bass energy and ambient movement.",
-    tags: ["House", "Energetic", "Dance"],
+    tags: ["Tropical House", "Dreamy"],
     cover: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
     audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"

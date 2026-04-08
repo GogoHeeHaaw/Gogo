@@ -129,40 +129,53 @@ function renderMusic(items) {
     musicGrid.innerHTML = `<div class="empty-state">No music matches your search or filter.</div>`;
     return;
   }
-
+  
+{
   musicGrid.innerHTML = items.map(item => `
-    <article class="media-card">
-      <div class="card-media" style="background-image:url('${item.cover}')"></div>
-      <div class="card-body">
-        <div class="card-topline">
-          <span class="pill">${item.genre}</span>
-          <span class="meta">${item.bpm} BPM</span>
-        </div>
-        <h3 class="card-title">${item.title}</h3>
-        <p class="card-desc">${item.description}</p>
-        <div class="tag-row">
-          ${makeTags(item.tags)}
-        </div>
-        <div class="card-footer">
-          <span class="duration">${item.artist} • ${item.duration}</span>
-          <div class="card-actions">
-            <button class="btn btn-ghost preview-btn" type="button"
-              data-type="music"
-              data-title="${item.title}"
-              data-artist="${item.artist}"
-              data-desc="${item.description}"
-              data-image="${item.cover}"
-              data-src="${item.audio}">
-              Preview
-            </button>
-            <a class="btn btn-primary download-btn" href="${item.download}" download>
-              Download
-            </a>
-          </div>
-        </div>
+  <article class="media-card">
+    <div class="card-media" style="background-image:url('${item.cover}')"></div>
+    <div class="card-body">
+      <div class="card-topline">
+        <span class="pill">${item.genre}</span>
+        <span class="meta">${item.bpm || ""} BPM</span>
       </div>
-    </article>
-  `).join("");
+
+      <h3 class="card-title">${item.title}</h3>
+      <p class="card-desc">${item.description}</p>
+
+      <div class="tag-row">
+        ${makeTags(item.tags)}
+      </div>
+
+      <div class="card-footer">
+        <span class="duration">${item.artist} • ${item.duration}</span>
+
+        <div class="card-actions">
+          ${
+            item.upcoming
+              ? `<span class="upcoming-label">Upcoming</span>`
+              : `
+                <button class="btn btn-ghost preview-btn" type="button"
+                  data-type="music"
+                  data-title="${item.title}"
+                  data-artist="${item.artist}"
+                  data-desc="${item.description}"
+                  data-image="${item.cover}"
+                  data-src="${item.audio}">
+                  Preview
+                </button>
+
+                <a class="btn btn-primary download-btn" href="${item.download}" download>
+                  Download
+                </a>
+              `
+          }
+        </div>
+
+      </div>
+    </div>
+  </article>
+`).join("");
 }
 
 function renderPlugins(items) {

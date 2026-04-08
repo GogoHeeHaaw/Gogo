@@ -43,7 +43,7 @@ const musicData = [
     popular: 0,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
-    cover: "26690.jpg"
+    cover: "26690.jpg",
     upcoming: true
   }
 ];
@@ -53,7 +53,7 @@ const pluginData = [
     id: 1,
     name: "FreqTone",
     developer: "DigitalHarmony",
-    type: "Distortion", "Effect",
+    type: "Effect",
     category: "Distortion",
     formats: ["VST3"],
     newest: false,
@@ -70,7 +70,7 @@ const pluginData = [
     id: 2,
     name: "ZoDelay",
     developer: "DigitalHarmony",
-    type: "Delay", "Effect", 
+    type: "Effect", 
     category: "Delay",
     formats: ["VST3"],
     newest: true,
@@ -130,7 +130,6 @@ function renderMusic(items) {
     return;
   }
   
-{
   musicGrid.innerHTML = items.map(item => `
   <article class="media-card">
     <div class="card-media" style="background-image:url('${item.cover}')"></div>

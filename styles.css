@@ -442,16 +442,67 @@ main{
   line-height:1.7;
 }
 
+/* 🎛 TOOLBAR LAYOUT */
 .toolbar{
   display:grid;
   grid-template-columns: 1.5fr .8fr .8fr;
   gap:12px;
   margin-bottom:20px;
 }
+
+/* 🔍 NEW SEARCH BOX */
+.search-box{
+  position:relative;
+  display:flex;
+  align-items:center;
+  width:100%;
+}
+
+.search-box input{
+  width:100%;
+  height:52px;
+  padding:0 16px 0 42px;
+
+  border-radius:16px;
+  border:1px solid var(--line);
+
+  background: var(--panel);
+  color: var(--text);
+
+  outline:none;
+  backdrop-filter: blur(14px);
+
+  transition: all .25s ease;
+}
+
+.search-box input::placeholder{
+  color:var(--muted-2);
+}
+
+.search-box input:focus{
+  border-color:rgba(139,123,255,0.6);
+  box-shadow:0 0 0 4px rgba(139,123,255,0.16);
+  background: var(--panel-strong);
+}
+
+.search-box:hover input{
+  border-color: rgba(139,123,255,0.25);
+}
+
+.search-icon{
+  position:absolute;
+  left:14px;
+  font-size:.9rem;
+  color: var(--muted-2);
+  pointer-events:none;
+}
+
+/* 🎛 SELECT DROPDOWN */
 .select-input{
   width:100%;
   min-height:52px;
   padding:0 16px;
+
   border-radius:16px;
   border:1px solid var(--line);
 
@@ -460,21 +511,25 @@ main{
 
   outline:none;
 
-  /* 🔥 clean UI */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  transition: all .25s ease;
+}
+
+.select-input:hover{
+  border-color: rgba(139,123,255,0.25);
+}
+
+.select-input:focus{
+  border-color:rgba(139,123,255,0.6);
+  box-shadow:0 0 0 4px rgba(139,123,255,0.16);
 }
 
 .select-input option{
   background: var(--bg-2);
   color: var(--text);
-}
-
-.search-input::placeholder{ color:var(--muted-2); }
-.search-input:focus, .select-input:focus{
-  border-color:rgba(139,123,255,0.6);
-  box-shadow:0 0 0 4px rgba(139,123,255,0.16);
 }
 
 .card-grid{

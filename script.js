@@ -43,7 +43,7 @@ const musicData = [
     popular: 0,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
-    cover: "#",
+    cover: "26690.jpg",
     audio: "#",
     download: "#"
   }

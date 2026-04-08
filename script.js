@@ -40,12 +40,12 @@ const musicData = [
     bpm: 148,
     duration: "3:54",
     featured: false,
-    popular: 68,
+    popular: 0,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
     cover: "#",
     audio: "#",
-    upcoming: "#"
+    download: "#"
   }
 ];
 
@@ -65,7 +65,7 @@ const pluginData = [
     image: "20260408_060337.jpg",
     previewType: "video",
     previewSrc: "logos_vanlalthlana_c2126ce351014624a655cee510086ed9.mp4",
-    download: "https://www.dropbox.com/scl/fi/ttldgl1xnck1suj19q6w5/FreqTone.rar?rlkey=xkurbfq8m7mfq3tvew6jqg9qo&st=qeiem7ax&dl=0"
+    download: "FreqTone.rar"
   },
   {
     id: 2,
@@ -82,7 +82,7 @@ const pluginData = [
     image: "file_000000001ee8720683dd6daf2c7fe445.png",
     previewType: "video",
     previewSrc: "VN20260319_181704.mp4",
-    download: "https://www.dropbox.com/scl/fi/76qk48362rkw9zscvsjmq/ZoDelay.rar?rlkey=40tgp7flztfmw4weuwtgc9iqk&st=pn4w8djd&dl=0"
+    download: "ZoDelay.rar"
   }
 ];
 

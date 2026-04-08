@@ -44,8 +44,6 @@ const musicData = [
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
     cover: "26690.jpg"
-    audio: "",
-    download: ""
   }
 ];
 
@@ -54,7 +52,7 @@ const pluginData = [
     id: 1,
     name: "FreqTone",
     developer: "DigitalHarmony",
-    type: "Distortion", "Effect",
+    type: "Effect",
     category: "Distortion",
     formats: ["VST3"],
     newest: false,
@@ -71,14 +69,14 @@ const pluginData = [
     id: 2,
     name: "ZoDelay",
     developer: "DigitalHarmony",
-    type: "Delay", "Effect", 
+    type: "Effect", 
     category: "Delay",
     formats: ["VST3"],
     newest: true,
     popular: 95,
     featured: false,
     description: "A versatile and intuitive delay plugin, a sleek minimal design with an optimized engine which can deliver from tight slap-back to wide cinematic echoes.",
-    tags: ["Effect", "Space", "Ambient", "Echoes"],
+    tags: ["Delay Effect", "Space", "Ambient", "Echoes"],
     image: "file_000000001ee8720683dd6daf2c7fe445.png",
     previewType: "video",
     previewSrc: "VN20260319_181704.mp4",

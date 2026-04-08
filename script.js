@@ -1,22 +1,6 @@
 const musicData = [
   {
     id: 1,
-    title: "MAKA",
-    artist: "Gogo",
-    genre: "Melodic Bass",
-    mood: "Emotional",
-    bpm: 140,
-    duration: "3:42",
-    featured: true,
-    popular: 75,
-    description: "A wide, emotional melodic bass track with thick atmospheric layers and a powerful lift.",
-    tags: ["Melodic", "Emotional", "Atmospheric"],
-    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
-    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  },
-  {
-    id: 2,
     title: "OMA",
     artist: "Gogo",
     genre: "Tropical House",
@@ -32,6 +16,22 @@ const musicData = [
     download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
   },
   {
+    id: 2,
+    title: "MAKA",
+    artist: "Gogo",
+    genre: "Melodic Bass",
+    mood: "Emotional",
+    bpm: 140,
+    duration: "3:42",
+    featured: true,
+    popular: 75,
+    description: "A wide, emotional melodic bass track with thick atmospheric layers and a powerful lift.",
+    tags: ["Melodic", "Emotional", "Atmospheric"],
+    cover: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  },
+  {
     id: 3,
     title: "Lost",
     artist: "Gogo",
@@ -42,7 +42,7 @@ const musicData = [
     featured: false,
     popular: 68,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
-    tags: ["Emotional", "Melodic", "Electronic Rock"],
+    tags: ["Electronic Rock"],
     cover: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
     audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     download: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
@@ -65,7 +65,7 @@ const pluginData = [
     image: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
     previewType: "audio",
     previewSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
-    download: "#"
+    download: "https://www.dropbox.com/scl/fi/ttldgl1xnck1suj19q6w5/FreqTone.rar?rlkey=xkurbfq8m7mfq3tvew6jqg9qo&st=qeiem7ax&dl=0"
   },
   {
     id: 2,
@@ -82,7 +82,7 @@ const pluginData = [
     image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80",
     previewType: "video",
     previewSrc: "https://www.w3schools.com/html/mov_bbb.mp4",
-    download: "#"
+    download: "https://www.dropbox.com/scl/fi/76qk48362rkw9zscvsjmq/ZoDelay.rar?rlkey=40tgp7flztfmw4weuwtgc9iqk&st=pn4w8djd&dl=0"
   }
 ];
 

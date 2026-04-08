@@ -44,6 +44,8 @@ const musicData = [
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
     cover: "26690.jpg"
+    audio: "",
+    download: ""
   }
 ];
 

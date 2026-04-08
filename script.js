@@ -43,9 +43,7 @@ const musicData = [
     popular: 0,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
-    cover: "26690.jpg",
-    audio: "#",
-    download: "#"
+    cover: "26690.jpg"
   }
 ];
 
@@ -54,14 +52,14 @@ const pluginData = [
     id: 1,
     name: "FreqTone",
     developer: "DigitalHarmony",
-    type: "Effect",
+    type: "Distortion", "Effect",
     category: "Distortion",
     formats: ["VST3"],
     newest: false,
     popular: 120,
     featured: true,
     description: "A distortion plugin designed for adding crunch, saturation, overdrive and cutting low/high pass to your samples.",
-    tags: ["Effect", "Distortion", "Minimal"],
+    tags: ["Distortion Effect", "Minimal"],
     image: "20260408_060337.jpg",
     previewType: "video",
     previewSrc: "logos_vanlalthlana_c2126ce351014624a655cee510086ed9.mp4",
@@ -71,7 +69,7 @@ const pluginData = [
     id: 2,
     name: "ZoDelay",
     developer: "DigitalHarmony",
-    type: "Effect",
+    type: "Delay", "Effect", 
     category: "Delay",
     formats: ["VST3"],
     newest: true,

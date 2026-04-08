@@ -11,8 +11,8 @@ const musicData = [
     popular: 92,
     description: "A sleek chill and dreamy with modern synth/bass energy and ambient movement.",
     tags: ["Tropical House", "Dreamy"],
-    cover: "https://www.dropbox.com/scl/fi/vtahnyfrzrs4i3gmvm3o3/IMG_20260408_170230.jpg?rlkey=vvostk7lhhbaeiqfx4ju6f34e&st=6z8oixnm&dl=0",
-    audio: "https://www.dropbox.com/scl/fi/ug2ctthit7fwdmgzqkhip/Gogo-OMA.m4a?rlkey=k739fz7rlxef9pqdofqc9iqru&st=lujju5a1&dl=0",
+    cover: "IMG_20260408_170230.jpg",
+    audio: "Gogo - OMA.m4a",
     download: "https://www.dropbox.com/scl/fi/ug2ctthit7fwdmgzqkhip/Gogo-OMA.m4a?rlkey=k739fz7rlxef9pqdofqc9iqru&st=lujju5a1&dl=0"
   },
   {
@@ -27,8 +27,8 @@ const musicData = [
     popular: 75,
     description: "A wide, emotional melodic bass track with thick atmospheric layers and a powerful lift.",
     tags: ["Melodic", "Emotional", "Atmospheric"],
-    cover: "https://www.dropbox.com/scl/fi/8znkjum2g39kzg1ortbuw/IMG_20260408_173419.jpg?rlkey=f9k84jhpnw0t5p2auczinb4m8&st=m7g4tnly&dl=0",
-    audio: "https://www.dropbox.com/scl/fi/mo8ats86bbhpdx29utplg/Gogo-MAKA.m4a?rlkey=a6p3w4avdmnf8p37ietjehbr0&st=dzy5nve2&dl=0",
+    cover: "IMG_20260408_173419.jpg",
+    audio: "Gogo - MAKA.m4a",
     download: "https://www.dropbox.com/scl/fi/mo8ats86bbhpdx29utplg/Gogo-MAKA.m4a?rlkey=a6p3w4avdmnf8p37ietjehbr0&st=dzy5nve2&dl=0"
   },
   {
@@ -62,9 +62,9 @@ const pluginData = [
     featured: true,
     description: "A distortion plugin designed for adding crunch, saturation, overdrive and cutting low/high pass to your samples.",
     tags: ["Effect", "Distortion", "Minimal"],
-    image: "https://www.dropbox.com/scl/fi/gjcnhfhz0lnyixf1598f4/20260408_060337.jpg?rlkey=h6sles54fp08z48gt9dpgijy6&st=n1cin3a9&dl=0",
+    image: "20260408_060337.jpg",
     previewType: "video",
-    previewSrc: "https://www.instagram.com/reel/DLpij7Lzm50/?igsh=MXMwdTc4dGZ2cTl6cQ==",
+    previewSrc: "logos_vanlalthlana_c2126ce351014624a655cee510086ed9.mp4",
     download: "https://www.dropbox.com/scl/fi/ttldgl1xnck1suj19q6w5/FreqTone.rar?rlkey=xkurbfq8m7mfq3tvew6jqg9qo&st=qeiem7ax&dl=0"
   },
   {
@@ -81,7 +81,7 @@ const pluginData = [
     tags: ["Effect", "Space", "Ambient", "Echoes"],
     image: "file_000000001ee8720683dd6daf2c7fe445.png",
     previewType: "video",
-    previewSrc: "https://www.dropbox.com/scl/fi/lpbkzb4pai5psfrkvq8tg/VN20260319_181704.mp4?rlkey=qxtw7z37a66oep8w23z931t7z&st=h2pfelg8&dl=0",
+    previewSrc: "VN20260319_181704.mp4",
     download: "https://www.dropbox.com/scl/fi/76qk48362rkw9zscvsjmq/ZoDelay.rar?rlkey=40tgp7flztfmw4weuwtgc9iqk&st=pn4w8djd&dl=0"
   }
 ];

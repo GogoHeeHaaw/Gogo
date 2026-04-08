@@ -13,7 +13,7 @@ const musicData = [
     tags: ["Tropical House", "Dreamy"],
     cover: "IMG_20260408_170230.jpg",
     audio: "Gogo - OMA.m4a",
-    download: "https://www.dropbox.com/scl/fi/ug2ctthit7fwdmgzqkhip/Gogo-OMA.m4a?rlkey=k739fz7rlxef9pqdofqc9iqru&st=lujju5a1&dl=0"
+    download: "Gogo - OMA.m4a"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const musicData = [
     tags: ["Melodic", "Emotional", "Atmospheric"],
     cover: "IMG_20260408_173419.jpg",
     audio: "Gogo - MAKA.m4a",
-    download: "https://www.dropbox.com/scl/fi/mo8ats86bbhpdx29utplg/Gogo-MAKA.m4a?rlkey=a6p3w4avdmnf8p37ietjehbr0&st=dzy5nve2&dl=0"
+    download: "Gogo - MAKA.m4a"
   },
   {
     id: 3,

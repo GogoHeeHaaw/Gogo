@@ -22,16 +22,16 @@ body{
   position: relative;
 
   background:
-    radial-gradient(circle at top left, rgba(139,123,255,0.14), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(93,231,255,0.12), transparent 24%),
-    linear-gradient(
-      270deg,
-      #06070b,
-      #0b1020,
-      #0ea5e9,
-      #7f5af0,
-      #06070b
-    );
+  radial-gradient(circle at top left, rgba(139,123,255,0.10), transparent 30%),
+  radial-gradient(circle at bottom right, rgba(93,231,255,0.08), transparent 24%),
+  linear-gradient(
+    270deg,
+    #06070b,
+    #0a0f1a,
+    #0b1f2a,
+    #1a1b3a,
+    #06070b
+  );
 
   background-size: 400% 400%;
   animation: bgFlow 40s ease-in-out infinite;

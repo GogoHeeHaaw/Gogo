@@ -34,10 +34,19 @@ body{
     );
 
   background-size: 400% 400%;
-  animation: bgFlow 25s ease infinite;
+  animation: bgFlow 40s ease-in-out infinite;
 
   color:var(--text);
   overflow-x:hidden;
+}
+
+body::after{
+  content:"";
+  position: fixed;
+  inset:0;
+  background: rgba(0,0,0,0.35); /* adjust this */
+  pointer-events:none;
+  z-index:-1;
 }
 
 body.light{

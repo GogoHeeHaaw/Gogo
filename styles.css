@@ -26,11 +26,11 @@ body{
   radial-gradient(circle at bottom right, rgba(93,231,255,0.08), transparent 24%),
   linear-gradient(
     270deg,
-    #06070b,
-    #0a0f1a,
-    #0b1f2a,
-    #1a1b3a,
-    #06070b
+    #0a0c14,
+    #10192a,
+    #132c3a,
+    #1f2248,
+    #0a0c14
   );
 
   background-size: 400% 400%;

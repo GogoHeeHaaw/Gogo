@@ -12,8 +12,8 @@ const musicData = [
     description: "A sleek chill and dreamy with modern synth/bass energy and ambient movement.",
     tags: ["Tropical House", "Dreamy"],
     cover: "IMG_20260408_170230.jpg",
-    audio: "Gogo - OMA.m4a",
-    download: "Gogo - OMA.m4a"
+    audio: "Gogo - OMA.mp3",
+    download: "Gogo - OMA.mp3"
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ const musicData = [
     description: "A wide, emotional melodic bass track with thick atmospheric layers and a powerful lift.",
     tags: ["Melodic", "Emotional", "Atmospheric"],
     cover: "IMG_20260408_173419.jpg",
-    audio: "Gogo - MAKA.m4a",
-    download: "Gogo - MAKA.m4a"
+    audio: "Gogo - MAKA.mp3",
+    download: "Gogo - MAKA.mp3"
   },
   {
     id: 3,

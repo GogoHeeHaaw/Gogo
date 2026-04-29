@@ -43,7 +43,7 @@ const musicData = [
     popular: 0,
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
-    cover: "26690.jpg",
+    cover: "lost img.jpg",
     audio: "Gogo - Lost [El Roi].mp3",
     download: "Gogo - Lost [El Roi].mp3"
   },
@@ -57,9 +57,8 @@ const musicData = [
     duration: "3:54",
     featured: false,
     popular: 0,
-    description: "Gogo - Lost [El Roi] INSTRUMENTAL",
     tags: ["Electronic Rock"],
-    cover: "26690.jpg",
+    cover: "lost img.jpg",
     audio: "Gogo - Lost [El Roi] INSTRUMENTAL.mp3",
     download: "Gogo - Lost [El Roi] INSTRUMENTAL.mp3"
   }

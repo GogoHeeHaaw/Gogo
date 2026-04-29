@@ -57,6 +57,7 @@ const musicData = [
     duration: "3:54",
     featured: false,
     popular: 0,
+    description: "Instrumental",
     tags: ["Electronic Rock"],
     cover: "lost img.jpg",
     audio: "Gogo - Lost [El Roi] INSTRUMENTAL.mp3",

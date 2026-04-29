@@ -33,7 +33,7 @@ const musicData = [
   },
   {
     id: 3,
-    title: "Lost",
+    title: "Lost [El Roi]",
     artist: "Gogo",
     genre: "Electronic Rock",
     mood: "Emotional rock vibe with electronic texture",
@@ -44,7 +44,24 @@ const musicData = [
     description: "Electronic textures, spacious ambience, and a modern rock vibe.",
     tags: ["Electronic Rock"],
     cover: "26690.jpg",
-    upcoming: true
+    audio: "Gogo - Lost [El Roi].mp3",
+    download: "Gogo - Lost [El Roi].mp3"
+  },
+  {
+    id: 4,
+    title: "Lost [El Roi] INSTRUMENTAL",
+    artist: "Gogo",
+    genre: "Electronic Rock",
+    type: "Instrumental",
+    bpm: 148,
+    duration: "3:54",
+    featured: false,
+    popular: 0,
+    description: "Gogo - Lost [El Roi] INSTRUMENTAL",
+    tags: ["Electronic Rock"],
+    cover: "26690.jpg",
+    audio: "Gogo - Lost [El Roi] INSTRUMENTAL.mp3",
+    download: "Gogo - Lost [El Roi] INSTRUMENTAL.mp3"
   }
 ];
 
